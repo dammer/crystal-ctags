@@ -3,7 +3,7 @@
 --regex-Crystal=/^\s*module\s+([A-Z][a-zA-Z0-9_:]*)/\1/m,module,modules/
 --regex-Crystal=/^\s*class\s+([A-Z][a-zA-Z0-9_:]*)/\1/c,class,classes/
 --regex-Crystal=/^\s*(abstract|private)\s+class\s+([A-Z][a-zA-Z0-9_:]*)/\2/c,class,classes/
---regex-Crystal=/^\s*def\s+([a-z_][a-zA-Z0-9_?!]*)/\1/d,def,defs/
+--regex-Crystal=/^\s*def\s+((self\.)?[a-z_][a-zA-Z0-9_?!]*)/\1/d,def,defs/
 --regex-Crystal=/^\s*(abstract|private|protected)\s+def\s+([a-z_][a-zA-Z0-9_?!]*)/\2/d,def,defs/
 --regex-Crystal=/^\s*macro\s+([a-z_][a-zA-Z0-9_?!]*)/\1/M,macro,macros/
 --regex-Crystal=/^\s*(abstract|private|protected)\s+macro\s+([a-z_][a-zA-Z0-9_?!]*)/\2/M,macro,macros/
