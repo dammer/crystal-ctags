@@ -12,3 +12,6 @@
 --regex-Crystal=/^\s*(abstract|private)\s+struct\s+([A-Z][a-zA-Z0-9_:]*)/\2/s,struct,structs/
 --regex-Crystal=/^\s*lib\s+([A-Z][a-zA-Z0-9_:]*)/\1/l,lib,libs/
 --regex-Crystal=/^\s*alias\s+([A-Z][a-zA-Z0-9_]*)\s+=/\1/a,alias,aliases/
+--regex-Crystal=/^\s*property\s+\:([a-zA-Z0-9_]*)/\1/p,property,properties/
+--regex-Crystal=/^\s*setter\s+([^{}][a-zA-Z0-9_]*)/\1/S,setter,setters/
+--regex-Crystal=/^\s*getter\s+([^{}][a-zA-Z0-9_]*)/\1/g,getter,getter/
