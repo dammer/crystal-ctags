@@ -16,3 +16,4 @@
 --regex-Crystal=/^\s*setter\s+([^{}][a-zA-Z0-9_]*)/\1/S,setter,setters/
 --regex-Crystal=/^\s*getter\s+([^{}][a-zA-Z0-9_]*)/\1/g,getter,getter/
 --regex-Crystal=/^\s*([A-Z][A-Z0-9_:]*)\s+=/\1/C,constant,constants/
+--regex-Crystal=/^\s*it\s+("[^"]*")/\1/i,it,its/
