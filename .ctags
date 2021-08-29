@@ -1,10 +1,8 @@
 --langdef=Crystal
 --langmap=Crystal:.cr
 --regex-Crystal=/^\s*module\s+([A-Z][a-zA-Z0-9_:]*)/\1/m,module,modules/
---regex-Crystal=/^\s*class\s+([A-Z][a-zA-Z0-9_:]*)/\1/c,class,classes/
---regex-Crystal=/^\s*(abstract|private)\s+class\s+([A-Z][a-zA-Z0-9_:]*)/\2/c,class,classes/
---regex-Crystal=/^\s*def\s+((self\.)?[a-z_][a-zA-Z0-9_?!]*)/\1/d,def,defs/
---regex-Crystal=/^\s*(abstract|private|protected)\s+def\s+((self\.)?[a-z_][a-zA-Z0-9_?!]*)/\2/d,def,defs/
+--regex-Crystal=/^\s*(abstract|private)?\s*class\s+([A-Z][a-zA-Z0-9_:]*)/\2/c,class,classes/
+--regex-Crystal=/^\s*(abstract|private|protected)?\s?def\s+(self\.)?([a-z_][a-zA-Z0-9_?!]*)/\3/d,def,defs/
 --regex-Crystal=/^\s*macro\s+([a-z_][a-zA-Z0-9_?!]*)/\1/M,macro,macros/
 --regex-Crystal=/^\s*(abstract|private|protected)\s+macro\s+([a-z_][a-zA-Z0-9_?!]*)/\2/M,macro,macros/
 --regex-Crystal=/^\s*fun\s+([a-z_][a-zA-Z0-9_?!]*)/\1/f,function,functions/
@@ -13,8 +11,8 @@
 --regex-Crystal=/^\s*lib\s+([A-Z][a-zA-Z0-9_:]*)/\1/l,lib,libs/
 --regex-Crystal=/^\s*alias\s+([A-Z][a-zA-Z0-9_]*)\s+=/\1/a,alias,aliases/
 --regex-Crystal=/^\s*property\s+\:([a-zA-Z0-9_]*)/\1/p,property,properties/
---regex-Crystal=/^\s*setter\s+([^{}][a-zA-Z0-9_]*)/\1/S,setter,setters/
---regex-Crystal=/^\s*getter\s+([^{}][a-zA-Z0-9_]*)/\1/g,getter,getter/
+--regex-Crystal=/^\s*setter\s+[:"]?([^{}][a-zA-Z0-9_]*)/\1/S,setter,setters/
+--regex-Crystal=/^\s*getter\s+[:"]?([^{}][a-zA-Z0-9_]*)/\1/g,getter,getter/
 --regex-Crystal=/^\s*([A-Z][A-Z0-9_:]*)\s+=/\1/C,constant,constants/
 --regex-Crystal=/^\s*it\s+("[^"]*")/\1/i,it,its/
 --regex-Crystal=/^\s*enum\s+([A-Z][a-zA-Z0-9_:]*)/\1/e,enum,enums/
