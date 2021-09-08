@@ -2,7 +2,7 @@
 --langmap=Crystal:.cr
 --regex-Crystal=/^\s*module\s+([A-Z][a-zA-Z0-9_:]*)/\1/m,module,modules/
 --regex-Crystal=/^\s*(abstract|private)?\s*class\s+([A-Z][a-zA-Z0-9_:]*)/\2/c,class,classes/
---regex-Crystal=/^\s*(abstract|private|protected)?\s?def\s+(self\.)?([a-z_][a-zA-Z0-9_?!]*)/\3/d,def,defs/
+--regex-Crystal=/^\s*(abstract|private|protected)?\s?def\s+(self\.)?([a-z_][a-zA-Z0-9_]*[?!=]?)/\3/d,def,defs/
 --regex-Crystal=/^\s*macro\s+([a-z_][a-zA-Z0-9_?!]*)/\1/M,macro,macros/
 --regex-Crystal=/^\s*(abstract|private|protected)\s+macro\s+([a-z_][a-zA-Z0-9_?!]*)/\2/M,macro,macros/
 --regex-Crystal=/^\s*fun\s+([a-z_][a-zA-Z0-9_?!]*)/\1/f,function,functions/
